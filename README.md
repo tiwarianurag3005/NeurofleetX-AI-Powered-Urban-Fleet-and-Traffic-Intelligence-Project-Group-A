@@ -53,7 +53,7 @@ Build Tool: Maven
 # Backend Setup
 1) Configure Database: Update the src/main/resources/application.properties file with your MySQL username and password.
 
-2) Run Application: Execute the main method in NeurofleetxBackendApplication.java. The backend will start on http://localhost:8080.
+2) Run Application: Execute the main method in NeurofleetxBackendApplication.java.
 
 # Frontend Setup
 1) Navigate to Frontend Directory: Open a terminal in your frontend project folder.
