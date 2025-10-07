@@ -84,7 +84,7 @@ const PassengerHomePage = ({ setPage, setCurrentRide, rides }) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pickup, drop, vehicles, vehicleType, passengerCount]);
 
-    // ✅ Gemini AI Route Optimization (React + fetch, working with gemini-2.5-flash)
+    // Gemini AI Route Optimization (React + fetch, working with gemini-2.5-flash)
     const handleAiRouteOptimization = async () => {
         if (!pickup || !drop) return;
 
@@ -97,7 +97,7 @@ const PassengerHomePage = ({ setPage, setCurrentRide, rides }) => {
 
         const userQuery = `Suggest an optimized route from "${pickup}" to "${drop}".`;
 
-        const apiKey = "AIzaSyDQC_fbX4zMZuQW7LAwl3jWHfjl4Og_eYU";
+        const apiKey = process.env.React_app_api;
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
         const payload = {
